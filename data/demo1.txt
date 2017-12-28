@@ -1,0 +1,29 @@
+# register three students
+add student S001 Thomas
+add student S002 Andy
+add student S003 Siobhan
+
+# ...and two instructors
+add instructor I001 Lynette
+add instructor I002 Wyatt
+
+add course C001 UNDERWATER-BASKETWEAVING I001
+add course C002 CLOWNING-FOR-FUN-AND-PROFIT I001
+add course C003 BREAKDANCE! I002
+
+# Thomas, Andy and Siobhan are taking BASKETWEAVING
+enroll S001 C001
+enroll S002 C001
+enroll S003 C001
+
+# Thomas and Andy are taking CLOWNING
+enroll S001 C002
+enroll S002 C002
+
+# Just Siobhan is taking BREAKDANCE
+enroll S003 C003
+
+# Print everything out
+list student
+list instructor
+list course

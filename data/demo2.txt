@@ -1,0 +1,29 @@
+# A demonstration of various error conditions.
+
+# error, duplicate student id
+add student SXXA Olivia
+add student SXXA Olivia2
+
+# error, duplicate instructor id
+add instructor IXXA Suzanne
+add instructor IXXA Suzanne2
+
+# error, duplicate course id
+add course CXXA EASTERN-MYTHOLOGY IXXA
+add course CXXA EASTERN-MYTHOLOGY IXXA
+
+# error, non-existent instructor id
+add course CXXB ECONOMICS IYYA
+
+# error, invalid student id
+enroll SDNE CXXA
+
+# error, invalid course id
+enroll SXXA CAAA
+
+# error, not enrolled
+unenroll SXXA CXXA
+
+# error, already enrolled
+enroll SXXA CXXA
+enroll SXXA CXXA
